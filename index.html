@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Management Supir Travel</title>
+</head>
+
+<body>
+    <h2>Form Management Supir Travel</h2>
+    <form action="berhasil.html" method="get">
+        <table border="0" cellpadding="10" cellspacing="0">
+            <tr>
+                <td>Nama Lengkap Supir:</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>Email Supir:</td>
+                <td><input type="email" name="email" placeholder="fufufafa@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td>No. Telepon:</td>
+                <td><input type="tel" name="nomor hp" required placeholder="0812345678"></td>
+            </tr>
+            <tr>
+                <td>Destinasi</td>
+                <td>
+                    <select name="destinasi" required>
+                        <option value="">-- Pilih Destinasi --</option>
+                        <option>Medan</option>
+                        <option>Pematang Siantar</option>
+                        <option>Prapat</option>
+                        <option>Padang</option>
+                        <option>Bukittinggi</option>
+                        <option>Pekanbaru</option>
+                        <option>Banda Aceh</option>
+                        <option>Jakarta</option>
+                        <option>Semarang</option>
+                        <option>Yogyakarta</option>
+                        <option>Surabaya</option>
+                        <option>Malang</option>
+                        <option>Denpasar</option>
+                        <option>Kupang</option>
+                        <option>Makassar</option>
+                        <option>Jayapura</option>
+                        <option>Timika</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Keberangkatan</td>
+                <td><input type="date" name="tanggal" required></td>
+            </tr>
+            <tr>
+                <td>Waktu Berangkat</td>
+                <td><input type="time" name="waktu berangkat" required></td>
+            </tr>
+            <tr>
+                <td>Jumlah penumpang yang dibawa:</td>
+                <td><input type="number" name="jumlah penumpang" min="1" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Pilihan Armada</td>
+                <td>
+                    <select name="pilihan armada" required>
+                        <option value="">-- Pilih Armada --</option>
+                        <option>Mobil Hiace</option>
+                        <option>Bus Laksana</option>
+                        <option>Kijang Innova</option>
+                        <option>Mercedes-Benz 10000 OH</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Validasi Kesiapan Supir</td>
+                <td>
+                    <input type="checkbox" name="kondisi supir" value="Tidak dalam kondisi ngantuk"> Tidak dalam keadaan
+                    ngantuk <br>
+                    <input type="checkbox" name="kondisi supir" value="Dalam Kondisi Sehat"> Sehat Wal'afiat<br>
+                    <input type="checkbox" name="kondisi supir" value="Tidak dalam kondisi mabuk"> Tidak di
+                    bawah pengaruh obat/minuman keras<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Surat Kerja</td>
+                <td><input type="file" name="surat kerja" accept=".pdf,.jpg,.jpeg,.png" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Kirim"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
